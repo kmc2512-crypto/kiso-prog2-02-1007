@@ -8,10 +8,11 @@ int main(void)
 
     if (score >= 60) {
         point = 10;
+        printf("%s\n" ,"合格");
     } else {
         point = 0;
+        printf("%s\n" ,"不合格");
     }
-
-    printf("%d\n", point);
+    
     return 0;
 }

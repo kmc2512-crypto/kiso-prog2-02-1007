@@ -6,7 +6,13 @@ int main(void)
     int i;
 
     for (i = 1; i <= 20; i++) {
+
+        if(i % 10 == 0){
+            printf("%2d: %s\n", i, "うさぎは休憩する");
+            continue;
+        }
         printf("%2d: %s\n", i, (i % 2 == 0) ? "ウサギ" : "カメ");
+
     }
     return 0;
 }
